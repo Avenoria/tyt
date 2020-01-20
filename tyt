@@ -1,0 +1,31 @@
+package src;
+import java.util.*;
+import java.lang.*; 
+import java.io.*;
+class Kolko {
+public static void main (String []Args) {
+System.out.println ("Wybierz plansze."); 
+Scanner scan =  new Scanner(System.in);
+int rozmiar=scan.nextInt();
+char [] [] plansza = new char [rozmiar] [rozmiar];
+plansza[1] [1] ='x' ;
+plansza[2] [2]= 'o' ; 
+printPlansza(plansza);
+}
+		private static void printPlansza (char [] [] plansza) {
+			int rozmiar= plansza.length;
+			System.out.println("\t");
+	for (int i = 0; i<rozmiar; i++) 
+	{
+		System.out.println(i + "\t");}
+	System.out.println();
+	for (int wiersz=0; wiersz<rozmiar; wiersz++)
+	{
+		System.out.println (wiersz + "\t");
+	}
+		for (int kolumna=0; kolumna<rozmiar; kolumna ++)
+		{
+			System.out.println ();
+		}
+	}
+}
